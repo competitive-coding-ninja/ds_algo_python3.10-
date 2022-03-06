@@ -20,6 +20,8 @@ def array_operations() -> None:
         5. Index
         6. Reverse
         
+        Enter 0 to exit
+        
         Your choice: 
         """))
         match operation_input:
@@ -47,7 +49,7 @@ def array_operations() -> None:
             case 6:
                 input_array.reverse()
                 print_array(input_array)
-            case _:
+            case 0:
                 print(f'Program exiting..')
                 import sys
                 sys.exit()
